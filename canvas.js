@@ -44,10 +44,12 @@ window.addEventListener(`load`, () => {
   const draw = (e) => {
     if (!painting) return;
 
+    // Line styles
     ctx.lineWidth = lineWidth;
     ctx.lineCap = lineCap;
     ctx.strokeStyle = strokeStyle;
 
+    // Draw mechanism
     ctx.lineTo(e.clientX, e.clientY);
     ctx.stroke();
     ctx.beginPath();
