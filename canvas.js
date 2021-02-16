@@ -5,6 +5,15 @@ window.addEventListener(`load`, () => {
   // Set size
   canvas.height = window.innerHeight;
   canvas.width = window.innerWidth;
+
+  ctx.strokeStyle = "red";
+  ctx.lineWidth = 5;
+  ctx.strokeRect(100, 100, 200, 200);
+  ctx.strokeStyle = "blue";
+  ctx.lineWidth = 10;
+  ctx.strokeRect(200, 200, 200, 200);
+  ctx.fillStyle = "purple";
+  ctx.fillRect(300, 300, 200, 200);
 });
 
 // Resizing
